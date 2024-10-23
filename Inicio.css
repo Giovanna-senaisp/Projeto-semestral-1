@@ -1,0 +1,147 @@
+* {
+        margin: 0;
+        border: 0;
+        padding: 0;
+} 
+@font-face {
+        font-family: "mont";
+        src: url(./fontes/SwilyBright-Italic.otf);
+    }
+@font-face {
+font-family: "mont2";
+src: url(./fontes/CreatoDisplay-Light.otf);
+}
+
+@font-face {
+    font-family: "mont3";
+    src: url(./fontes/CreatoDisplay-Regular.otf);
+    }
+
+header {
+    background-color: #1A0436;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cima {
+    background-color: #1A0436;
+    height: 90px;
+    padding-top:  20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+ font-family: "mont";
+ color: white;
+ background: linear-gradient(90deg, #B41D6C, #6A3279);
+ width: 190px;
+ height: 52px;
+ text-align: center;
+ display: flex ;
+ border-radius: 18px;
+ font-size: 35px;
+ font-weight: 400;
+ align-items: center;
+ justify-content: center;
+ padding-top: 10px;
+}
+
+.barraPesquisa {
+    width: 725px;
+    height: 53.79px;
+    background: linear-gradient(90deg, #2A114B, #B41D6C);
+    margin:90px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+    align-items: center;  
+
+}
+
+.barraPesquisa img {
+width: 30px;
+height: 30px;
+}
+
+.perfil {
+    width: 51px;
+    height: 52px;
+    border-radius: 18px;
+    background: linear-gradient(90deg, #2A114B, #B41D6C);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.notificacao {
+    width: 51px;
+    height: 52px;
+    border-radius: 18px;
+    background: linear-gradient(90deg, #2A114B, #B41D6C);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: -40px;
+}
+
+header .baixo {
+font-family: "mont2";
+display: flex;
+flex-direction: row;
+display: flex;
+justify-content: center;
+}
+
+a {
+    color: white;
+    margin: 55px;
+    font-size: 20px;
+    margin-top: 25px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+}
+
+.banner {
+    height: 850px;
+    background-image: url(./img/banner.png);
+    background-size: cover;
+    flex-direction: column;
+}
+
+.super {
+    font-size: 128px;
+    color: #FEB500;
+    display: flex;
+    justify-content: right;
+    font-family: "mont3";
+    padding-right: 170px;
+    padding-top: 100px;
+    font-weight: 100;
+}
+
+.artista {
+    font-size: 128px;
+    color: #FEB500;
+    display: flex;
+    justify-content: right;
+    font-family: "mont";
+    padding-right: 170px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: right;
+    font-family: "mont2";
+    text-align: right;
+    padding-right: 130px;
+}
