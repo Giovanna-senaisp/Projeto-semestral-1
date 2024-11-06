@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+} 
+
+@font-face {
+    font-family: "mont";
+    src: url(./fontes/SwilyBright-Italic.otf);
+}
+
+@font-face {
+    font-family: "mont2";
+    src: url(./fontes/CreatoDisplay-Light.otf);
+}
+
+@font-face {
+    font-family: "mont3";
+    src: url(./fontes/CreatoDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: "mont4";
+    src: url(./fontes/CreatoDisplay-Bold.otf);
+}
+
+@font-face {
+    font-family: "mont5";
+    src: url(./fontes/CreatoDisplay-Medium.otf);
+}
+
+header {
+background-color: #1A0436;
+height: 200px;
+display: flex;
+flex-direction: column;
+}
+
+body {
+overflow: scroll;
+overflow-x: hidden;
+}
+
+.cima {
+background-color: #1A0436;
+height: 90px;
+padding-top:  20px;
+display: flex;
+align-items: center;
+justify-content:space-evenly;
+padding-right: 20px;
+}
+
+.bolha {
+width: 90px;
+height: 75px;
+}
+
+.conjuto {
+display: flex;
+flex-direction: row;
+}
+
+.logo {
+font-family: "mont";
+color: white;
+width: 190px;
+height: 45px;
+text-align: center;
+display: flex ;
+font-size: 35px;
+font-weight: 400;
+align-items: center;
+justify-content: center;
+padding-top: 10px;
+
+}
+
+#barraPesquisa {
+width: 700px;
+height: 53.79px;
+background-image: url(./img/barradepesquisa.png);
+margin:90px;
+border-radius: 18px;
+padding-right: 20px;
+margin-left: 150px;
+background-size: cover;
+}
+
+#barraPesquisa::-webkit-input-placeholder{
+color:#ffffff98;
+font-size:15px;
+}
+
+input {
+    color: white;
+    font-family: "mont2";
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.perfil a {
+    width: 51px;
+    height: 52px;
+    border-radius: 18px;
+    background-image: url(./img/Perfill.png);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 70px;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0);
+}
+
+.notificacao {
+    width: 51px;
+    height: 52px;
+    border-radius: 18px;
+    background: linear-gradient(90deg, #B41D6C, #2A114B);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: -10px;
+}
+
+header .baixo {
+font-family: "mont2";
+display: flex;
+flex-direction: row;
+display: flex;
+justify-content: center;
+}
+
+.baixo a{
+    color: white;
+    margin: 55px;
+    font-size: 20px;
+    margin-top: 25px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    transition: ease-in-out 0.3s;
+ }
+
+a:hover {
+    font-size: 25px;
+ }
+
+ body {
+    background-image: url(./img/fundo1.png);
+    background-size: cover;
+}
+
+.whitestar1 {
+    width: 700px ;
+    height: 120px;
+    display: flex;
+    margin-left: 818px;
+    }
+    
+    .whitestar2 {
+        width: 700px ;
+        height: 120px;
+        display: flex;
+        margin-top: 70px;
+        }
+
+        .tituloFormulario {
+            color: white;
+            font-size: 80px;
+            padding-left: 89px;
+            padding-top: 70px;
+            font-family: "mont4";
+            padding-bottom: 30px;
+        }
+
+
+        .desc {
+            color: white;
+            font-size: 25px;
+            padding-left: 89px;
+            font-family: "mont2";
+        }
+        .desc1 {
+            color: white;
+            font-size: 25px;
+            padding-left: 89px;
+            font-family: "mont2";
+            margin-top: 50px;
+        }
+
+
+        .descricao{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-size: 25px;
+            font-family: "mont2";
+        }
+
+        .gmailetell {
+            display: flex;
+            flex-direction: row;
+            padding-left: 89px;
+        }
+
+        .gmail {
+            font-family: "mont4";
+            font-size: 25px;
+            padding-right: 6px;
+        }
+
+        .desc3 {
+            font-family: "mont2";
+            font-size: 25px;
+            padding-right: 6px;
+        }
+
+        footer {
+            background-color: #2A114B;
+            height: 210px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            margin-top: 70px;
+        }
+        
+        .logo1 {
+            font-family: "mont";
+            color: white;
+            width: 190px;
+            height: 45px;
+            text-align: center;
+            display: flex ;
+            font-size: 25px;
+            font-weight: 400;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 20px;
+            padding-right: 40px;
+            padding-top: 10px;
+           }
+        
+           .bolha1 {
+            width: 60px;
+            height: 50px;
+            padding-bottom: 20px;
+        }
+        
+        .cimaRodape {
+            display: flex;
+            flex-direction: row;
+            padding-left: 90px;
+        
+        }
+        
+        .baixoRodape {
+        color: #844D93;
+        margin: 20px;
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 605;
+        font-family: "mont4";
+        letter-spacing: 2px;
+        transition: none;
+        }
+        
+        .baixoRodape:hover {
+            font-size: 20px;
+        }
+        
+        .redes {
+        padding-top: 40px;
+        padding-left: 15px;
+        padding-bottom: 25px;
+        }
+        
+        .fim {
+            height: 10px;
+            width: 100%;
+            background-color: #1A0436;
+            padding-bottom: 15px;
+        }
+        
+        .textosRodape {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .textoRodape {
+            font-size: 10px;
+            padding-top: 5px;
+            width: 250px;
+            margin-right: -105px;
+            color: white;
+        }
+        .textoRodape1 {
+            font-size: 10px;
+            padding-top: 5px;
+            width: 250px;
+            margin-left: 40px;
+            color: white;
+        }

@@ -1,0 +1,619 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+} 
+
+@font-face {
+    font-family: "mont";
+    src: url(./fontes/SwilyBright-Italic.otf);
+}
+
+@font-face {
+    font-family: "mont2";
+    src: url(./fontes/CreatoDisplay-Light.otf);
+}
+
+@font-face {
+    font-family: "mont3";
+    src: url(./fontes/CreatoDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: "mont4";
+    src: url(./fontes/CreatoDisplay-Bold.otf);
+}
+
+@font-face {
+    font-family: "mont5";
+    src: url(./fontes/CreatoDisplay-Medium.otf);
+}
+
+header {
+background-color: #1A0436;
+height: 200px;
+display: flex;
+flex-direction: column;
+}
+
+body {
+overflow: scroll;
+overflow-x: hidden;
+}
+
+body {
+    background-image: url(./img/fundo1.png);
+    background-size: cover;
+}
+
+.cima {
+background-color: #1A0436;
+height: 90px;
+padding-top:  20px;
+display: flex;
+align-items: center;
+justify-content:space-evenly;
+padding-right: 20px;
+}
+
+.bolha {
+width: 90px;
+height: 75px;
+}
+
+.conjuto {
+display: flex;
+flex-direction: row;
+}
+
+.logo {
+font-family: "mont";
+color: white;
+width: 190px;
+height: 45px;
+text-align: center;
+display: flex ;
+font-size: 35px;
+font-weight: 400;
+align-items: center;
+justify-content: center;
+padding-top: 10px;
+
+}
+
+#barraPesquisa {
+width: 700px;
+height: 53.79px;
+background-image: url(./img/barradepesquisa.png);
+margin:90px;
+border-radius: 18px;
+display: flex;
+justify-content: right;
+padding-right: 20px;
+align-items: center;  
+margin-left: 150px;
+background-size: cover;
+}
+
+#barraPesquisa::-webkit-input-placeholder{
+    color:#ffffff98;
+    font-size:15px;
+}
+
+input {
+color: white;
+font-family: "mont2";
+font-size: 15px;
+padding-left: 20px;
+}
+
+.barra {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.perfil a {
+width: 51px;
+height: 52px;
+border-radius: 18px;
+background-image: url(./img/Perfill.png);
+display: flex;
+align-items: center;
+justify-items: center;
+justify-content: center;
+margin-left: 70px;
+background-size: cover;
+color: rgba(255, 255, 255, 0);
+}
+
+.notificacao {
+width: 51px;
+height: 52px;
+border-radius: 18px;
+background: linear-gradient(90deg, #B41D6C, #2A114B);
+display: flex;
+align-items: center;
+justify-items: center;
+justify-content: center;
+margin-left: -10px;
+}
+
+header .baixo {
+font-family: "mont2";
+display: flex;
+flex-direction: row;
+display: flex;
+justify-content: center;
+}
+
+.baixo a{
+color: white;
+margin: 55px;
+font-size: 20px;
+margin-top: 25px;
+text-decoration: none;
+font-weight: 605;
+font-family: "mont2";
+letter-spacing: 2px;
+transition: ease-in-out 0.3s;
+}
+
+a:hover {
+font-size: 25px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloFormulario {
+    color: white;
+    font-size: 80px;
+    padding-left: 89px;
+    padding-top: 70px;
+    font-family: "mont4";
+    padding-bottom: 30px;
+}
+
+.whitestar1 {
+width: 700px ;
+height: 120px;
+display: flex;
+margin-left: 818px;
+}
+
+.whitestar2 {
+    width: 700px ;
+    height: 120px;
+    display: flex;
+    margin-top: 70px;
+    }
+
+.desc {
+    color: white;
+    font-size: 25px;
+    padding-left: 89px;
+    font-family: "mont2";
+}
+
+.desc2 {
+    color: white;
+    font-size: 25px;
+    padding-left: 5px;
+    font-family: "mont2";
+    padding-top: 15px;
+}
+
+.ComoFunciona {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fundoAmarelo {
+    background-color: #FEB500;
+    width: 496px;
+    height: 679px;
+    margin-top: 190px;
+    display: flex;
+    align-items: center;
+}
+
+.img1 {
+width: 574px;
+height: 574px;
+}
+
+.titulo1 {
+    font-size: 64px;
+    font-family: "mont4";
+    color: #ffffff;
+    margin-top: 200px;
+    
+}
+
+.topico1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    color: white;
+    font-size: 25px;
+    font-family: "mont2";
+}
+footer {
+    background-color: #2A114B;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 80px;
+}
+
+.logo1 {
+    font-family: "mont";
+    color: white;
+    width: 190px;
+    height: 45px;
+    text-align: center;
+    display: flex ;
+    font-size: 25px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-top: 10px;
+   }
+
+   .bolha1 {
+    width: 60px;
+    height: 50px;
+    padding-bottom: 20px;
+}
+
+.cimaRodape {
+    display: flex;
+    flex-direction: row;
+    padding-left: 90px;
+
+}
+
+.baixoRodape {
+color: #844D93;
+margin: 20px;
+font-size: 20px;
+text-decoration: none;
+font-weight: 605;
+font-family: "mont4";
+letter-spacing: 2px;
+transition: none;
+}
+
+.baixoRodape:hover {
+    font-size: 20px;
+}
+
+.redes {
+padding-top: 40px;
+padding-left: 15px;
+padding-bottom: 25px;
+}
+
+.fim {
+    height: 10px;
+    width: 100%;
+    background-color: #1A0436;
+    padding-bottom: 15px;
+}
+
+.textosRodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.textoRodape {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-right: -105px;
+    color: white;
+
+}
+.textoRodape1 {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-left: 40px;
+    color: white;
+}
+
+.ComoFunciona2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.fundoAzul {
+    background-color: #4848D8;
+    width: 496px;
+    height: 507px;
+    margin-top: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: right;   
+    margin-bottom: 120px;
+}
+
+.img2 {
+width: 566px;
+height: 412px;
+}
+
+.titulo2 {
+    font-size: 64px;
+    font-family: "mont";
+    color: #ffffff;
+    margin-top: 100px;
+    font-weight: 100;
+    
+   
+    
+}
+.titulo3 {
+    font-size: 64px;
+    font-family: "mont4";
+    color: #ffffff;
+    font-weight: 100;
+    
+}
+
+.topico2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 25px;
+    font-family: "mont2";
+    margin-right: 250px;
+      
+}
+
+.desc3 {
+    color: white;
+    font-size: 25px;
+    font-family: "mont2";
+    padding-top: 25px;
+}
+
+.tituloIncricao {
+    color: white;
+    font-size: 80px;
+    margin-left: 89px;
+   margin-top: 200px;
+    font-family: "mont4";
+    padding-bottom: 30px; 
+}
+
+.InscricaoFormulario {
+    display: flex;
+    flex-direction: row;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 15px;
+    font-family: "mont2";
+    margin-left: 100px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    letter-spacing: 1.5px;
+}
+.barraFormulario{
+    padding-left: 12px;
+    background-color: #efe4fe44;
+    border: solid 2px white;
+    border-radius: 10px;
+    width: 495px;
+    height: 43px;
+    color: white;
+   margin-left: 89px;
+   font-family: "mont2";
+   font-size: 15px;
+   font-weight: 40;
+}
+#barraFormulario5::-webkit-input-placeholder{
+    color:#ffffff98;
+    font-size:15px;
+}
+
+#barraFormulario5{
+    padding-left: 12px;
+    background-color: #efe4fe44;
+    border: solid 2px white;
+    border-radius: 10px;
+    width: 495px;
+    height: 43px;
+    color: white;
+   margin-left: 89px;
+   font-family: "mont2";
+   font-size: 15px;
+   font-weight: 40;
+}
+
+#barraFormulario4{
+    padding-left: 12px;
+    background-color: #efe4fe44;
+    border: solid 2px white;
+    border-radius: 10px;
+    width: 495px;
+    height: 43px;
+    color: white;
+   margin-left: 89px;
+   font-family: "mont2";
+   font-size: 15px;
+   font-weight: 40;
+}
+
+#barraFormulario2{
+    padding-left: 12px;
+    background-color: #efe4fe44;
+    border: solid 2px white;
+    border-radius: 10px;
+    width: 495px;
+    height: 142px;
+    color: white;
+   margin-left: 89px;
+   font-family: "mont2";
+   font-size: 15px;
+   font-weight: 40;
+   padding-top: 15px;
+}
+
+#barraFormulario2::-webkit-input-placeholder{
+    color:#ffffff98;
+    font-size:15px;
+}
+.barraFormulario3{
+    padding-left: 12px;
+    background-color: #efe4fe44;
+    border: solid 2px white;
+    border-radius: 10px;
+    width: 495px;
+    height: 32px;
+    color: white;
+   margin-left: 89px;
+   font-family: "mont2";
+   font-size: 15px;
+   font-weight: 40;
+   padding-top: 10px;
+
+}
+
+.part2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.termosdeUso {
+    color: white;
+    font-size: 15px;
+    font-family: "mont2";
+    margin-left: 100px;
+    padding-bottom: 10px;
+    margin-top: 100px;
+    letter-spacing: 1.5px;
+}
+
+.descTermo {
+    color: white;
+    font-size: 15px;
+    font-family: "mont2";
+    margin-left: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+}
+
+.checkbox {
+display: flex;
+flex-direction: row;
+}
+
+#barraFormulario4::-webkit-input-placeholder{
+    color:#ffffff98;
+    font-size:15px;
+}
+
+.caixa {
+    margin-left: 78px;
+    width: 15px;
+}
+
+.LiEestoudeAcordocomO {
+    color: white;
+    font-size: 15px;
+    font-family: "mont2";
+    margin-left: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: row;
+}
+
+.TermodeUso {
+    color: #4c34ee;
+    font-size: 15px;
+    font-family: "mont2";
+    margin-left: 5px;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.e {
+    color: white;
+    font-size: 15px;
+    font-family: "mont2";
+    margin-left: 5px;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+}
+
+.Politica {
+    color: #4c34ee;
+    font-size: 15px;
+    font-family: "mont2";
+    margin-left: 5px;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.TermosDeUsoDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.Privacidade {
+    color: #4c34ee;
+    font-size: 15px;
+    font-family: "mont2";
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    text-decoration:underline;
+    cursor: pointer;
+    padding-left: 103px;
+}
+
+.enviar {
+    background-color: #2A114B;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    display:flex;
+    width:160px;
+    margin-top: 70px;
+    font-family: "mont3";
+    margin-left: 1300px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.enviar2 {
+color: white;
+font-family: "mont3";
+text-decoration: dotted;
+transition: none;
+font-size: 20px;
+}
+
+.enviar2:hover {
+    font-size: 20px;
+}
