@@ -159,3 +159,14 @@ body {
     background-image: url(./img/fundo1.png);
     background-size: cover;
 }
+
+.sobreNos {
+    display:flex; 
+    flex-direction: row;
+}
+
+.bordaImg {
+    border: 1px solid white ;
+    width: 500px;
+    height: 300px;
+}
