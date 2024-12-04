@@ -1,0 +1,757 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "mont";
+    src: url(./font/SwilyBright-Italic.otf);
+}
+
+@font-face {
+    font-family: "mont2";
+    src: url(./font/CreatoDisplay-Light.otf);
+}
+
+@font-face {
+    font-family: "mont3";
+    src: url(./font/CreatoDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: "mont4";
+    src: url(./font/CreatoDisplay-Bold.otf);
+}
+
+@font-face {
+    font-family: "mont5";
+    src: url(./font/CreatoDisplay-Medium.otf);
+}
+
+header {
+background-color: #1A0436;
+height: 200px;
+display: flex;
+flex-direction: column;
+}
+
+body {
+overflow: scroll;
+overflow-x: hidden;
+}
+
+body {
+    background-image: url(imgCinema/FundoCinema.png);
+    background-size: cover;
+}
+
+.cima {
+background-color: #1A0436;
+height: 90px;
+padding-top:  20px;
+display: flex;
+align-items: center;
+justify-content:space-evenly;
+padding-right: 20px;
+}
+
+.bolha {
+width: 90px;
+height: 75px;
+margin-left: 50px;
+}
+
+.conjuto {
+display: flex;
+flex-direction: row;
+}
+
+.logo {
+font-family: "mont";
+color: white;
+width: 190px;
+height: 45px;
+text-align: center;
+display: flex ;
+font-size: 35px;
+font-weight: 400;
+align-items: center;
+justify-content: center;
+padding-top: 10px;
+
+}
+
+#barraPesquisa {
+width: 700px;
+height: 53.79px;
+background-image: url(img/barradepesquisa.png);
+margin: 90px;
+border-radius: 18px;
+padding-right: 20px;
+margin-left: 150px;
+background-size: cover;
+}
+
+#barraPesquisa::-webkit-input-placeholder{
+    color:#ffffff98;
+    font-size:15px;
+}
+input {
+color: white;
+font-family: "mont2";
+font-size: 15px;
+padding-left: 20px;
+}
+
+.barra {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.perfil a {
+width: 51px;
+height: 52px;
+border-radius: 18px;
+background-image: url(img/perfill.png);
+display: flex;
+align-items: center;
+justify-items: center;
+justify-content: center;
+margin-right: 30px;
+background-size: cover;
+color: rgba(255, 255, 255, 0);
+transition: ease-in-out 0.3s;
+}
+.perfil :hover{
+    transform: scale(1.1);
+}
+
+.notificacao{
+width: 51px;
+height: 52px;
+border-radius: 18px;
+background: linear-gradient(90deg, #B41D6C, #2A114B);
+display: flex;
+align-items: center;
+justify-items: center;
+justify-content: center;
+margin-left: -15px;
+transition: ease-in-out 0.3s;
+}
+.notificacao:hover{
+    transform: scale(1.1);
+}
+
+header .baixo {
+font-family: "mont2";
+display: flex;
+flex-direction: row;
+display: flex;
+justify-content: center;
+}
+
+.baixo a{
+color: white;
+margin: 55px;
+font-size: 15px;
+margin-top: 25px;
+text-decoration: none;
+font-weight: 605;
+font-family: "mont2";
+letter-spacing: 2px;
+transition: ease-in-out 0.3s;
+}
+
+.baixo a:hover {
+font-size: 18px;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 1520px;
+}
+.destaques{
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: -30px;
+        display: flex;
+        transition: transform 0.3s ease;
+        overflow-x: auto;
+    position: relative;
+    bottom: 30px;
+}
+.destaques::-webkit-scrollbar {
+    display: none;
+  }
+.filtro{
+    border-radius: 20px;
+    background: linear-gradient(#844d9369,#1a04364d ,#1a04364d);
+    width: 646px;
+    height: 360px;
+    position: relative;
+    top: 5px;
+}
+.destaque1{
+    position: relative;
+    left: 30px;
+}
+.destaque1 img{
+    border-radius: 20px;
+    z-index: -1;
+    position: relative;
+    top: -355px;
+}
+.nomes{
+    color: white;
+    position: relative;
+    bottom: 480px;
+    left: 30px;
+}
+.nomes h1{
+    font-family: "mont4";
+    padding-bottom: 6px;
+    font-size: 40px;
+}
+.nomes h3{
+    font-family: "mont2";
+    font-weight: 200;
+    font-size: 30px;
+}
+.informacao{
+    display: flex;
+    flex-direction: row;
+}
+.seta{
+    position: relative;
+    left: 320px;
+    bottom: 70px;
+    z-index: 1;
+}
+.destaque2 img{
+    border-radius: 20px;
+    z-index: -1;
+    position: relative;
+    top: -355px;
+}
+.destaque2{
+    position: relative;
+    left: 180px;
+}
+.filtro2{
+    border-radius: 20px;
+    background: linear-gradient(#feb60073,#1a04364d ,#1a04364d);
+    width: 646px;
+    height: 360.3px;
+    position: relative;
+    top: 5px;
+}
+.seta2{
+    position: relative;
+    left: 375px;
+    bottom: 70px;
+    z-index: 1;
+}
+.destaque3 img{
+    border-radius: 20px;
+    z-index: -1;
+    position: relative;
+    top: -355px;
+}
+.destaque3{
+    position: relative;
+    left: 325px;
+}
+.filtro3{
+    border-radius: 20px;
+    background: linear-gradient(#fce6d9ab,#1a04369f ,#1a04368a);
+    width: 646px;
+    height: 360.3px;
+    position: relative;
+    top: 5px;
+}
+.seta3{
+    position: relative;
+    left: 330px;
+    bottom: 70px;
+    z-index: 1;
+}
+.destaque4 img{
+    border-radius: 20px;
+    z-index: -1;
+    position: relative;
+    top: -355px;
+}
+.destaque4{
+    position: relative;
+    left: 455px;
+}
+.filtro4{
+    border-radius: 20px;
+    background: linear-gradient(#b41d6b9d,#1a04369f ,#1a04368a);
+    width: 646px;
+    height: 360px;
+    position: relative;
+    top: 5px;
+}
+.seta4{
+    position: relative;
+    left: 380px;
+    bottom: 70px;
+    z-index: 1;
+}
+.infos{
+    position: relative;
+    bottom: 40px;
+}
+.linha1{
+    background-color: white;
+    height: 2px;
+    width: 300px;
+    position: relative;
+    left: 1280px;
+    bottom: 150px;
+}
+.texto1{
+    color: white;
+    font-family: "mont3";
+    font-weight: 100;
+    font-size: 40px;
+    margin-left: 60px;
+    position: relative;
+    bottom: 250px;
+}
+.font{
+    font-family: "mont";
+    font-weight: 100;
+}
+.texto2{
+    color: white;
+    font-family: "mont2";
+    width: 800px;
+    position: relative;
+    bottom: 280px;
+    left: 450px;
+    font-size: 25px;
+}
+.texto2 h3{
+    font-weight: 100;
+}
+.linha2{
+    background-color: white;
+    height: 2px;
+    width: 370px;
+    position: relative;
+    bottom: 200px;
+}
+.diretores{
+    position: relative;
+    bottom: 80px;
+}
+.diretor1{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 90px;
+}
+.textosinfo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 105px;
+    bottom: 30px;
+}
+.info1{
+    color: white;
+    align-items: right;
+}
+.info1 h2{
+    font-family: "mont4";
+    font-size: 65px;
+    position: relative;
+    right: 50px;
+    text-align: end;
+}
+.info1 h3{
+    font-family: "mont5";
+    font-weight: 200;
+    position: relative;
+    left: 125px;
+    font-size: 24px;
+}
+.info2 h3{
+    color: white;
+    font-family: "mont2";
+    font-weight: 100;
+    font-size: 24px;
+    width: 630px;
+    text-align: end;
+    position: relative;
+    top: 45px;
+}
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+
+}
+.botaoo{
+    background: linear-gradient(90deg,#B41D6C, #B41D6C, #844D93) ;
+    color: white;
+    font-family: "mont2";
+    font-size: 15px;
+    width: 165px;
+    height: 45px;
+    border-radius: 45px;
+    cursor: pointer;
+    position: relative;
+    top: 130px;
+    right: 50px;
+}
+.imagem{
+    background-color: #844d938a;
+    border-radius: 20px;
+    width: 600px;
+    height: 376px;
+    z-index: -1;
+    position: relative;
+    bottom: 80px;
+    -webkit-box-shadow:0px 0px 105px 45px rgba(137,79,150,0.58);
+-moz-box-shadow: 0px 0px 105px 45px rgba(137,79,150,0.58);
+box-shadow: 0px 0px 105px 45px rgba(137,79,150,0.58);
+}
+.imagem img{
+    border-radius: 20px;
+    width: 570px;
+    position: relative;
+    top: 23.5px;
+    left: 15.5px;
+}
+.diretor2{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 250px;
+}
+.textosinfo2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 65px;
+    bottom: 30px;
+}
+.info3{
+    color: white;
+    align-items: right;
+}
+.info3 h2{
+    font-family: "mont4";
+    font-size: 65px;
+    position: relative;
+    right: 24px;
+    text-align: start;
+}
+.info3 h3{
+    font-family: "mont5";
+    font-weight: 100;
+    position: relative;
+    right: 50px;
+    font-size: 24px;
+}
+.info4 h3{
+    color: white;
+    font-family: "mont2";
+    font-weight: 100;
+    font-size: 24px;
+    width: 600px;
+    text-align: left;
+    position: relative;
+    top: 45px;
+    right: 48px;
+}
+.textos2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.botaoo2{
+    background: linear-gradient(90deg,#B41D6C, #B41D6C, #844D93) ;
+    color: white;
+    font-family: "mont2";
+    font-size: 15px;
+    width: 165px;
+    height: 45px;
+    border-radius: 45px;
+    cursor: pointer;
+    position: relative;
+    top: 130px;
+}
+.botao2{
+    display: flex;
+    justify-content: end;
+}
+.diretor3{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 450px;
+}
+.textosinfo3{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 105px;
+    bottom: 30px;
+}
+.info5{
+    color: white;
+    align-items: right;
+}
+.info5 h2{
+    font-family: "mont4";
+    font-size: 65px;
+    position: relative;
+    right: 50px;
+    text-align: end;
+}
+.info5 h3{
+    font-family: "mont5";
+    font-weight: 200;
+    position: relative;
+    left: 370px;
+    font-size: 24px;
+}
+.info6 h3{
+    color: white;
+    font-family: "mont2";
+    font-weight: 100;
+    font-size: 24px;
+    width: 630px;
+    text-align: end;
+    position: relative;
+    top: 45px;
+}
+.textos3{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+
+}
+.botaoo3{
+    background: linear-gradient(90deg,#B41D6C, #B41D6C, #844D93) ;
+    color: white;
+    font-family: "mont2";
+    font-size: 15px;
+    width: 165px;
+    height: 45px;
+    border-radius: 45px;
+    cursor: pointer;
+    position: relative;
+    top: 130px;
+    right: 50px;
+}
+.diretor4{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 640px;
+}
+.diretor5{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 840px;
+}
+.info8{
+    color: white;
+    align-items: right;
+}
+.info8 h3{
+    font-family: "mont5";
+    font-weight: 200;
+    position: relative;
+    left: 30px;
+    font-size: 24px;
+}
+.info8 h2{
+    font-family: "mont4";
+    font-size: 65px;
+    position: relative;
+    right: 50px;
+    text-align: end;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-family: "mont2";
+}
+
+footer {
+    background-color: #2A114B;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 960px;
+}
+
+.logo1 {
+    font-family: "mont";
+    color: white;
+    width: 190px;
+    height: 45px;
+    text-align: center;
+    display: flex ;
+    font-size: 25px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-top: 10px;
+   }
+
+   .bolha1 {
+    width: 60px;
+    height: 50px;
+    padding-bottom: 20px;
+}
+
+.ParteDeCimaRodape{
+    display: flex;
+    flex-direction: row;
+    padding-left: 90px;
+
+}
+
+.pag1 {
+color: #844D93;
+margin: 20px;
+font-size: 20px;
+text-decoration: none;
+font-weight: 605;
+font-family: "mont4";
+letter-spacing: 2px;
+transition: none;
+}
+
+.pag1:hover {
+    font-size: 20px;
+}
+
+.redes {
+padding-top: 40px;
+padding-left: 15px;
+padding-bottom: 25px;
+}
+
+.fim {
+    height: 10px;
+    width: 100%;
+    background-color: #1A0436;
+    padding-bottom: 15px;
+}
+
+.textosRodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.PoliticaDePrivacidade {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-right: -105px;
+    color: white;
+}
+.Copyright {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-left: 40px;
+    color: white;
+}
+
+nav {
+    background-color: #1A0436;  /*fundo*/
+
+    margin-top: 25px;
+}
+
+nav li {
+    display: inline-block; /*posicionamento do li, para ele ficar na horizontal*/
+}
+
+nav li .pag { /*personalização do a*/
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+}
+
+.inicio {
+    padding-left: 100px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+    padding-right: 100px;
+}
+
+.categorias{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+}
+
+.dropdown-menu a {
+    display: block;  /*exbiir o dropdown na vertical*/ 
+}
+
+.dropdown-menu { 
+    position: absolute; /*as opções aparecem embaixo da Categorias*/
+    background-color: #1A0436;
+    margin-left: -5px;
+    margin-top: 20px;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.362);
+    display: none; /*não exibir as opções*/
+    z-index: 2;
+}
+
+.opcao:hover {
+    background-color: #B41D6C;
+}
+
+.opcao {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding: 20px;
+}
+
+.dropdown:hover .dropdown-menu { /*ao passar o mous, as opções aparecem*/
+    display: block; 
+}

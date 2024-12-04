@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
+
+
+@font-face {
+    font-family: "bold";
+    src: url(font/CreatoDisplay-Bold.otf);
+}
+
+@font-face {
+    font-family: "light";
+    src: url(font/CreatoDisplay-Light.otf);
+}
+
+@font-face {
+    font-family: "mendium";
+    src: url(font/CreatoDisplay-Medium.otf);
+}
+
+@font-face {
+    font-family: "regular";
+    src: url(font/CreatoDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: "swily";
+    src: url(font/SwilyBright-Italic.otf);
+}
+
+.header {
+background-image: url(img/desfocado4.png);
+display: flex;
+flex-direction: column;
+height: 1000px;
+background-size: cover;
+}
+
+body {
+overflow: scroll;
+overflow-x: hidden;
+}
+
+body {
+    background-image: url(img/fundo.png);
+    background-size: cover;
+}
+
+.cima {
+height: 90px;
+padding-top:  20px;
+display: flex;
+align-items: center;
+justify-content:space-evenly;
+padding-right: 20px;
+margin-bottom: 20px;
+}
+
+.bolha {
+width: 90px;
+height: 75px;
+margin-left: 50px;
+}
+
+.conjuto {
+display: flex;
+flex-direction: row;
+}
+
+.logo {
+font-family: "mont";
+color: white;
+width: 190px;
+height: 45px;
+text-align: center;
+display: flex ;
+font-size: 35px;
+font-weight: 400;
+align-items: center;
+justify-content: center;
+padding-top: 10px;
+
+}
+
+#barraPesquisa {
+width: 700px;
+height: 53.79px;
+opacity: 0.5;
+background-color: rgba(0, 0, 0, 0.25);
+color:rgba(255, 255, 255, 0.5);
+margin: 90px;
+border-radius: 18px;
+padding-right: 20px;
+margin-left: 150px;
+background-size: cover;
+}
+
+#barraPesquisa::-webkit-input-placeholder{
+    color:rgb(255, 255, 255);
+    font-size:15px;
+}
+input {
+color: rgb(255, 255, 255);
+font-family: "light";
+font-size: 15px;
+padding-left: 20px;
+}
+
+.barra {
+display: flex;
+flex-direction: row;
+justify-content: center;
+border: none;
+}
+
+.perfil a {
+width: 51px;
+height: 52px;
+border-radius: 18px;
+background-image: url(img/IconPerfil.png);
+display: flex;
+align-items: center;
+justify-items: center;
+justify-content: center;
+margin-right: 30px;
+background-size: cover;
+color: rgba(0, 0, 0, 0.25);
+transition: ease-in-out 0.3s;
+}
+
+
+
+.notificacao a {
+width: 51px;
+height: 52px;
+background-image: url(img/IconNotificacao.png);
+border-radius: 18px;
+background-color: rgba(0, 0, 0, 0.25);
+display: flex;
+align-items: center;
+justify-items: center;
+justify-content: center;
+margin-left: -15px;
+background-size: cover;
+transition: ease-in-out 0.3s;
+}
+
+.baixo{
+    margin-left: 25px;
+}
+
+header .baixo {
+font-family: "regular";
+display: flex;
+flex-direction: row;
+display: flex;
+justify-content: center;
+
+}
+
+.baixo a{
+color: white;
+margin: 55px;
+font-size: 20px;
+margin-top: 25px;
+text-decoration: none;
+font-weight: 605;
+font-family: "regular";
+letter-spacing: 2px;
+margin-right: 50px;
+}
+
+a:hover {
+font-size: 20px;
+width: 60px;
+height: 60px;
+}
+
+/* Informações do artista */
+
+.info{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.foto{
+   border-radius: 20px;
+   width: 30%; 
+   height: 77%;
+   position: absolute;
+   bottom: -85px;
+    left: 200px;
+    -webkit-box-shadow:0px 0px 94px 37px rgba(167,200,221,1);
+-moz-box-shadow: 0px 0px 94px 37px rgba(167,200,221,1);
+box-shadow: 0px 0px 94px 37px rgba(167,200,221,1);
+transition: ease-in-out 0.3s;
+}
+.foto:hover { 
+    transform: scale(1.03);   
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    bottom: -8px;
+    right: 5%;
+    color: white;
+}
+.nome{
+    font-family: "bold";
+    font-size: 70px;
+}
+
+.descricao{
+    font-family: "regular";
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.pais{
+    position: absolute;
+    top: 10px ;
+    right: 95px;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a .rede1{
+    transition: ease-in-out 0.3s;
+}
+
+.insta:hover img{
+    transform: scale(1.1);  
+}
+
+a .rede2{
+    transition: ease-in-out 0.3s;
+}
+
+
+.email:hover img{
+    transform: scale(1.1);
+}
+
+.email{
+    margin-left: 18px;
+}
+
+.hbo{
+    display: flex;
+  border-radius: 10px;  
+  background: linear-gradient( 84deg, #4F1686, #460DCB, #4F00FF, #4F1686);
+  height:50px;
+  width: 220px;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.hbo p{
+    font-family: "mendium";
+    margin: auto;
+    color: white;
+}
+
+.a{
+    text-decoration: none;
+}
+
+.hbo{
+    transition: ease-in-out 0.5s;
+}
+
+.hbo:hover{
+    transform: scale(1.1); 
+}
+
+.seta{
+   width: 13px;
+   height: 12px;
+   margin-right: 10px;
+}
+
+.trabalhos{
+    font-family: "bold";
+    font-size: 60px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.filmes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+
+
+.filme1{
+    width: 280px;
+    height: 391px;
+    margin-left: 280px;
+    transition: ease-in-out 0.3s;
+}
+.filme1:hover { 
+    transform: scale(1.1);   
+}
+
+.filme2{
+    width: 280px;
+    height: 391px;
+    transition: ease-in-out 0.3s;
+}
+.filme2:hover { 
+    transform: scale(1.1); 
+}
+
+.filme3{
+    width: 280px;
+    height: 391px;
+    margin-right: 280px;
+    transition: ease-in-out 0.3s; 
+}
+.filme3:hover { 
+    transform: scale(1.1); 
+}
+
+
+  /* footer */
+
+     footer {
+    background-color: #2A114B; 
+    width: 100%;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 150px;
+}
+
+.logo1 {
+    font-family: "mont";
+    color: white;
+    width: 190px;
+    height: 45px;
+    text-align: center;
+    display: flex ;
+    font-size: 25px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-top: 10px;
+   }
+
+   .bolha1 {
+    width: 60px;
+    height: 50px;
+    padding-bottom: 20px;
+}
+
+.ParteDeCimaRodape{
+    display: flex;
+    flex-direction: row;
+    padding-left: 90px;
+
+}
+
+.pag1 {
+color: #844D93;
+margin: 20px;
+font-size: 20px;
+text-decoration: none;
+font-weight: 605;
+font-family: "mont4";
+letter-spacing: 2px;
+transition: none;
+}
+
+.pag1:hover {
+    font-size: 20px;
+}
+
+.redes {
+padding-top: 40px;
+padding-left: 15px;
+padding-bottom: 25px;
+}
+
+.fim {
+    height: 10px;
+    width: 100%;
+    background-color: #1A0436;
+    padding-bottom: 15px;
+}
+
+.textosRodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.PoliticaDePrivacidade {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-right: -105px;
+    color: white;
+}
+.Copyright {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-left: 40px;
+    color: white;
+} 

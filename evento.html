@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meraki</title>
+    <link rel="stylesheet" href="evento.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/imgHeaderEFooter/bolha.png">
+</head>
+<body>
+    <header>
+        <div class="header">
+        <div class="ParteDecima">
+        <div class="logo">
+            <img class="bolha" src="img/imgHeaderEFooter/bolha.png" alt="">
+        <h4 class="logoNome">Meraki</h4>
+        </div>
+<div class="barraDePesquisa">
+        <input id="barraPesquisa" type="text" placeholder="Pesquise aqui">
+</div>
+<div class="perfil">
+<a href="./formulário.html">perfil</a>
+</div>
+<div class="notificacao">
+<img src="img/imgHeaderEFooter/sino.png" alt="">
+</div>
+</div>
+<div>
+    <nav>
+        <ul>
+            <li>
+                <a class="inicio" href="Inicio.html">Inicio</a>
+            </li>
+            <li class="dropdown">
+                <a class="categorias" href="">Categorias</a>
+                <div class="dropdown-menu">
+                <a  class="opcao" href="musica.html">Música</a>
+                <a  class="opcao" href="cinema.html">Cinema</a>
+                <a class="opcao"  href="index.html">Literatura</a>
+                <a  class="opcao" href="arte.html">Artes</a>
+                <a class="opcao"  href="fotografia.html">Fotografia</a>
+                <a class="opcao" href="jogos.html">Jogos</a>
+                </div>
+            </li>
+            <li>
+                <a  class="pag" href="noticia.html">Noticias</a>
+            </li>
+            <li>
+                <a  class="pag" href="evento.html">Eventos</a>
+            </li>
+            <li>
+                <a  class="pag" href="formulário.html">Formulário</a>
+            </li>
+            <li>
+                <a  class="pag" href="comunidade.html">Comunidade</a>
+            </li>
+            <li>
+                <a class="pag" href="sobreNos.html">Sobre Nós</a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+</div>
+    </header>
+    <main>
+        <div class="baner">
+            <img class="estrelaB1" src="img/banner/estrela1.png" alt="">
+            <img class="Bimg1"  src="img/banner/baner1.png" alt="">
+            <div class="banerT">
+            <h1 class="eventos">EVENTOS</h1>
+            <h1 class="magicas">MÁGICOS</h1>
+            </div>
+            <img class="estrelaB2" src="img/banner/estrela2.png" alt="">
+            <img class="Bimg2" src="img/banner/baner2.png" alt="">
+            <img class="Bimg3" src="img/banner/baner3.png" alt="">
+            <img class="estrelaB3" src="img/banner/estrela3.png" alt="">
+        </div>
+        <div class="botoes">
+            <button class="rosa" >JULHO</button>
+            <button class="roxo" >AGOSTO</button>
+            <button class="azul" >SETEMBRO</button>
+            <button class="amarelo" >OUTUBRO</button>
+            <button class="ROSA" onclick="filtrar('grupo5')">NOVEMBRO</button>
+            <button class="ROXO" onclick="filtrar('grupo6')">DEZEMBRO</button>
+        </div>
+        <div class="itens">
+            <div class="item grupo5">
+                <div class="eventoT">
+                    <img class="estrelaT" src="img/eventoP/estrelaEvento1.png" alt="">
+                    <img class="imgET" src="img/eventoP/imgEvento1.png" alt="">
+                    <h1 class="TT">Artistas independentes se juntam em performance ao-vivo</h1>
+                </div>
+                
+                <button class="modal-open" data-modal="modal1">
+                    <img class="estrela" src="img/eventoP/estrelaEvento2.png" alt="">
+                    <img class="imgE" src="img/eventoP/imgEvento2.png" alt="">
+                    <h1 class="T">Descubra Novos Talentos: Exposição de Esculturas</h1>
+                </button>
+
+                <div class="modal" id="modal1">
+                    <div class="modal-content">
+                        <div class="bege">
+                        <h1 class="Tdetalhes1">DETALHES DO EVENTO</h1>
+                        <div class="textos">
+                        <p class="texto">Venha explorar o talento de artistas emergentes na "Exposição de Esculturas"! Nesta mostra exclusiva, artistas ainda desconhecidos apresentam suas obras, trazendo visões únicas e criativas em uma variedade de estilos e materiais. Este é um convite para descobrir novos nomes e inspirar-se com esculturas que contam histórias, despertam emoções e desafiam perspectivas.</p>
+                        <h3 class="AMARELO">ENTRADA</h3>
+                        <p class="texto">A entrada para a Exposição de Esculturas é gratuita! Venha e aproveite essa oportunidade única de conhecer novos talentos e se encantar com cada obra.</p>
+                        <h3 class="AMARELO">LOCAL</h3>
+                        <p class="texto">O evento acontecerá no Centro Cultural Fiesp, localizado na Avenida Paulista.</p>
+                        <h3 class="AMARELO">DIA E HORA</h3>
+                        <p class="texto">Dia 29 de novembro, das 10h às 18h</p>
+                        </div>
+                        </div>
+                        <img src="img/eventoG/evento1.png" alt="">
+                        <button class="link modal-close">X</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item grupo6">
+                <button class="modal-open" data-modal="modal2">
+                    <img class="estrela" src="img/eventoP/estrelaEvento3.png" alt="">
+                    <img class="imgE" src="img/eventoP/imgEvento3.png" alt="">
+                    <h1 class="T">Natal de Arte e Talento: Mostra de Fotógrafos e Ilustradores</h1>
+                </button>
+                <div class="modal" id="modal2">
+                    <div class="modal-content">
+                        <div class="bege">
+                        <h1 class="Tdetalhes2">DETALHES DO EVENTO</h1>
+                        <div class="textos">
+                        <p class="texto">Entre no espírito natalino com a "Natal de Arte e Talento", uma exposição especial de fotógrafos e ilustradores que trazem a magia do Natal para cada clique e traço. Artistas emergentes apresentam obras inspiradas nas celebrações de fim de ano, explorando temas como luzes natalinas, paisagens de inverno e momentos festivos.</p>
+                        <h3 class="AZUL">ENTRADA</h3>
+                        <p class="texto">Gratuita para todos!</p>
+                        <h3 class="AZUL">LOCAL</h3>
+                        <p class="texto">Museu da Imagem e do Som (MIS), Avenida Europa, São Paulo</p>
+                        <h3 class="AZUL">DIA E HORA</h3>
+                        <p class="texto">10 de dezembro, das 11h às 19h</p>
+                        </div>
+                        </div>
+                        <img src="img/eventoG/evento2.png" alt="">
+                        <button class="link modal-close">x</button>
+                    </div>
+                </div>
+                <button class="modal-open" data-modal="modal3">
+                    <img class="estrela" src="img/eventoP/estrelaEvento4.png" alt="">
+                    <img class="imgE" src="img/eventoP/imgEvento4.png" alt="">
+                    <h1 class="T">Festa de Artistas: Celebrando o Novo Ano com Música e Performance</h1>
+                </button>
+
+                <div class="modal" id="modal3">
+                    <div class="modal-content">
+                        <div class="bege">
+                            <h1 class="Tdetalhes3">DETALHES DO EVENTO</h1>
+                            <div class="textos">
+                            <p class="texto"> Venha dar boas-vindas ao Ano Novo na "Festa de Artistas", um evento especial que reúne músicos e performers talentosos. Este espetáculo vibrante contará com apresentações ao vivo, danças e intervenções artísticas que celebram a renovação e a esperança do novo ano.</p>
+                            <h3 class="ROSAA">ENTRADA</h3>
+                            <p class="texto">A entrada para a "Festa de Artistas" custa R$ 10, a ser paga na entrada do evento.</p>
+                            <h3 class="ROSAA">LOCAL</h3>
+                            <p class="texto">Praça da República, São Paulo</p>
+                            <h3 class="ROSAA">DIA E HORA</h3>
+                            <p class="texto">31 de dezembro, das 16h às 22h</p>
+                            </div>
+                        </div>
+                        <img src="img/eventoG/evento3.png" alt="">
+                        <button class="link modal-close">x</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="cimaRodape">
+        <div class="logo1">
+            <img class="bolha1" src="img/imgHeaderEFooter/bolha.png" alt="">
+        <h4 class="logo1">Meraki</h4>
+    </div>
+        </div>
+        <div>
+            <a class="baixoRodape" href="Inicio.html">Inicio</a>
+            <a class="baixoRodape" href="">Categorias</a>
+            <a class="baixoRodape" href="">Noticias</a>
+            <a class="baixoRodape" href="">Eventos</a>
+            <a class="baixoRodape" href="formulário.html">Formulário</a>
+            <a class="baixoRodape" href="">Comunidade</a>
+            <a class="baixoRodape" href="">Sobre Nós</a>
+                </div>
+                <img class="redes" src="img/imgHeaderEFooter/redesSociais.png" alt="">
+        </div>
+        <div class="fim">
+            <div class="textosRodape">
+            <p class="textoRodape1">Copyright 2024 © Todos os direitos reservados.</p>
+            <p class="textoRodape">Política de Privacidade</p>
+        </div>
+        </div>
+    </footer>
+    <script>
+        var modalBtns = document.querySelectorAll(".modal-open");
+    
+        modalBtns.forEach(function (btn) {
+        btn.onclick = function () {
+            var modalId = btn.getAttribute("data-modal");
+            var modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = "flex";
+            }
+        };
+    });
+    
+        var closeBtns = document.querySelectorAll(".modal-close");
+    
+        closeBtns.forEach(function (btn) {
+        btn.onclick = function () {
+            var modal = btn.closest(".modal");
+            if (modal) {
+                modal.style.display = "none";
+            }
+        };
+    });
+    
+        function filtrar(grupo) {
+        const itens = document.querySelectorAll(".item");
+    
+        itens.forEach((item) => {
+            if (item.classList.contains(grupo)) {
+                item.classList.remove("oculto");
+            } else {
+                item.classList.add("oculto");
+            }
+        });
+    }
+    
+    window.onload = () => {
+        filtrar("grupo5");
+    };
+    
+            </script>
+</body>
+</html>

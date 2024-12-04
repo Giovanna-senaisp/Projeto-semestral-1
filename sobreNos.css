@@ -30,132 +30,182 @@
 }
 
 header {
-background-color: #1A0436;
-height: 200px;
-display: flex;
-flex-direction: column;
+    background-color: transparent;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
-overflow: scroll;
-overflow-x: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
-.cima {
-background-color: #1A0436;
-height: 90px;
-padding-top:  20px;
-display: flex;
-align-items: center;
-justify-content:space-evenly;
-padding-right: 20px;
+.ParteDecima {
+    background-color: #1A0436;
+    height: 90px;
+    padding-top:  20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding-right: 20px;
 }
 
 .bolha {
-width: 90px;
-height: 75px;
+    width: 90px;
+    height: 75px;
 }
 
-.conjuto {
-display: flex;
-flex-direction: row;
-}
-
-.logo {
-font-family: "mont";
-color: white;
-width: 190px;
-height: 45px;
-text-align: center;
-display: flex ;
-font-size: 35px;
-font-weight: 400;
-align-items: center;
-justify-content: center;
-padding-top: 10px;
-
+.logoNome, .logo {
+ font-family: "mont";
+ color: white;
+ width: 190px;
+ height: 45px;
+ text-align: center;
+ display: flex ;
+ font-size: 35px;
+ font-weight: 400;
+ align-items: center;
+ justify-content: center;
+ padding-top: 10px;
 }
 
 #barraPesquisa {
-width: 700px;
-height: 53.79px;
-background-image: url(./img/barradepesquisa.png);
-margin:90px;
-border-radius: 18px;
-padding-right: 20px;
-margin-left: 150px;
-background-size: cover;
+    width: 700px;
+    height: 53.79px;
+    background-image: url(./img/barradepesquisa.png);
+    margin:90px;
+    border-radius: 18px;
+    padding-right: 20px;
+    margin-left: 150px;
+    background-size: cover;
 }
 
 #barraPesquisa::-webkit-input-placeholder{
-color:#ffffff98;
-font-size:15px;
+    color:#ffffff98;
+    font-size:15px;
 }
 
 input {
-color: white;
-font-family: "mont2";
-font-size: 15px;
-padding-left: 20px;
+    color: white;
+    font-family: "mont2";
+    font-size: 15px;
+    padding-left: 20px;
 }
 
-.barra {
-display: flex;
-flex-direction: row;
-justify-content: center;
+.barraDePesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .perfil a {
-width: 51px;
-height: 52px;
-border-radius: 18px;
-background-image: url(./img/Perfill.png);
-display: flex;
-align-items: center;
-justify-items: center;
-justify-content: center;
-margin-left: 70px;
-background-size: cover;
-color: rgba(255, 255, 255, 0);
+    width: 51px;
+    height: 52px;
+    border-radius: 18px;
+    background-image: url(./img/Perfill.png);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 70px;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0);
 }
 
 .notificacao {
-width: 51px;
-height: 52px;
-border-radius: 18px;
-background: linear-gradient(90deg, #B41D6C, #2A114B);
-display: flex;
-align-items: center;
-justify-items: center;
-justify-content: center;
-margin-left: -10px;
+    width: 51px;
+    height: 52px;
+    border-radius: 18px;
+    background: linear-gradient(90deg, #B41D6C, #2A114B);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: -10px;
 }
 
-header .baixo {
-font-family: "mont2";
-display: flex;
-flex-direction: row;
-display: flex;
-justify-content: center;
+nav {
+    background-color: #1A0436;  /*fundo*/
+    box-sizing: border-box; 
+    margin-top: 25px;
+    display: flex;
 }
 
-.baixo a{
-color: white;
-margin: 55px;
-font-size: 20px;
-margin-top: 25px;
-text-decoration: none;
-font-weight: 605;
-font-family: "mont2";
-letter-spacing: 2px;
-transition: ease-in-out 0.3s;
+nav li {
+    display: inline-block; /*posicionamento do li, para ele ficar na horizontal*/
 }
 
-a:hover {
-font-size: 25px;
+nav li .pag { /*personalização do a*/
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 42px;
 }
 
-body {
+.inicio {
+    padding-left: 100px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+    padding-right: 100px;
+}
+
+.categorias{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+}
+
+.dropdown-menu a {
+    display: block;  /*exbiir o dropdown na vertical*/ 
+}
+
+.dropdown-menu { 
+    position: absolute; /*as opções aparecem embaixo da Categorias*/
+    background-color: #1A0436;
+    margin-left: -5px;
+    margin-top: 40px;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.362);
+    display: none; /*não exibir as opções*/
+}
+
+.opcaoo:hover {
+    background-color: #B41D6C;
+}
+
+.opcaoo {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding: 20px;
+}
+
+.dropdown:hover .dropdown-menu { /*ao passar o mous, as opções aparecem*/
+    display: block; 
+}
+
+
+ body {
     background-image: url(./img/fundo1.png);
     background-size: cover;
 }
@@ -163,10 +213,277 @@ body {
 .sobreNos {
     display:flex; 
     flex-direction: row;
+    padding-top: 100px;
+    padding-left: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .bordaImg {
     border: 1px solid white ;
-    width: 500px;
-    height: 300px;
+    width: 463px;
+    height:477px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.img1 {
+width: 419px;
+height: 421px;
+}
+
+.titulo1 {
+    color: white;
+    font-size: 80px;
+    margin-left: 60px;
+    font-family: "mont4";
+    padding-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    margin-left: 60px;
+    width: 440px;
+}
+
+.desc {
+    display: flex;
+    color: white;
+    font-size: 25px;
+    font-family: "mont2";
+    margin-left: 60px;
+    padding-top: 30px;
+}
+
+.star1 {
+display: flex;
+margin-left: 890px;
+height: 100px;
+}
+
+.star3 {
+    display: flex;
+    margin-left: 890px;
+    height: 100px;
+    margin-top: 78px;
+    }
+
+.titulo2 {
+    color: white;
+    font-size: 80px;
+    padding-left: 80px;
+    padding-top: 130px;
+    font-family: "mont4";
+    padding-bottom: 100px;
+}
+
+.objetivos {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+}
+
+.objetivo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.descObjetivo {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitulo {
+    color: #FEB500;
+    font-size: 36px;
+    padding-left: 40px;
+    font-family: "mont2";
+    padding-bottom: 10px;
+}
+
+.bola {
+    width: 250px;
+    height: 250px;
+}
+
+.descObj {
+    color: #ffffff;
+    font-size: 24px;
+    padding-left: 40px;
+    font-family: "mont2";
+}
+
+.bordaImg2 {
+    border: 1px solid white ;
+    width:1058px;
+    height:490px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.star2 {
+    display: flex;
+    height: 80px;
+    width: 900px;
+  margin-left:  -100px;
+}
+
+.infoFinal {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.titulo3 {
+    color: white;
+    font-size: 80px;
+    margin-left: 60px;
+    font-family: "mont4";
+
+}
+
+.augefive {
+    padding-left: 100px;
+}
+
+.faleConosco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.opcao {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+   margin: 100px;
+   transition: transform 0.3s ease-in-out;
+}
+
+.opcao:hover {
+    transform: scale(1.1);
+}
+
+.subtituloFale {
+    color: #ffffff;
+    font-size: 32px;
+    font-family: "mont2";
+    padding-bottom: 5px;
+    padding-top: 30px;
+}
+
+.endereco {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: "mont2";
+    padding-bottom: 10px;
+}
+
+.titulo4 {
+    color: white;
+    font-size: 80px;
+     display: flex;
+    font-family: "mont4";
+    justify-content: center;
+   padding-top: 50px;
+}
+
+
+
+footer {
+    background-color: #2A114B;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logo1 {
+    font-family: "mont";
+    color: white;
+    width: 190px;
+    height: 45px;
+    text-align: center;
+    display: flex ;
+    font-size: 25px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-top: 10px;
+   }
+
+   .bolha1 {
+    width: 60px;
+    height: 50px;
+    padding-bottom: 20px;
+}
+
+.ParteDeCimaRodape{
+    display: flex;
+    flex-direction: row;
+    padding-left: 90px;
+
+}
+
+.pag1 {
+color: #844D93;
+margin: 20px;
+font-size: 20px;
+text-decoration: none;
+font-weight: 605;
+font-family: "mont4";
+letter-spacing: 2px;
+transition: none;
+}
+
+.pag1:hover {
+    font-size: 20px;
+}
+
+.redes {
+padding-top: 40px;
+padding-left: 15px;
+padding-bottom: 25px;
+}
+
+.fim {
+    height: 10px;
+    width: 100%;
+    background-color: #1A0436;
+    padding-bottom: 15px;
+}
+
+.textosRodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.PoliticaDePrivacidade {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-right: -105px;
+    color: white;
+}
+.Copyright {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-left: 40px;
+    color: white;
+}
+
+    

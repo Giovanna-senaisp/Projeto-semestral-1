@@ -30,69 +30,55 @@
 }
 
 header {
-background-color: #1A0436;
-height: 200px;
-display: flex;
-flex-direction: column;
+    background-color: transparent;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
-overflow: scroll;
-overflow-x: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
-body {
-    background-image: url(./img/fundo1.png);
-    background-size: cover;
-}
-
-.cima {
-background-color: #1A0436;
-height: 90px;
-padding-top:  20px;
-display: flex;
-align-items: center;
-justify-content:space-evenly;
-padding-right: 20px;
+.ParteDecima {
+    background-color: #1A0436;
+    height: 90px;
+    padding-top:  20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding-right: 20px;
 }
 
 .bolha {
-width: 90px;
-height: 75px;
+    width: 90px;
+    height: 75px;
 }
 
-.conjuto {
-display: flex;
-flex-direction: row;
-}
-
-.logo {
-font-family: "mont";
-color: white;
-width: 190px;
-height: 45px;
-text-align: center;
-display: flex ;
-font-size: 35px;
-font-weight: 400;
-align-items: center;
-justify-content: center;
-padding-top: 10px;
-
+.logoNome, .logo {
+ font-family: "mont";
+ color: white;
+ width: 190px;
+ height: 45px;
+ text-align: center;
+ display: flex ;
+ font-size: 35px;
+ font-weight: 400;
+ align-items: center;
+ justify-content: center;
+ padding-top: 10px;
 }
 
 #barraPesquisa {
-width: 700px;
-height: 53.79px;
-background-image: url(./img/barradepesquisa.png);
-margin:90px;
-border-radius: 18px;
-display: flex;
-justify-content: right;
-padding-right: 20px;
-align-items: center;  
-margin-left: 150px;
-background-size: cover;
+    width: 700px;
+    height: 53.79px;
+    background-image: url(./img/barradepesquisa.png);
+    margin:90px;
+    border-radius: 18px;
+    padding-right: 20px;
+    margin-left: 150px;
+    background-size: cover;
 }
 
 #barraPesquisa::-webkit-input-placeholder{
@@ -101,66 +87,127 @@ background-size: cover;
 }
 
 input {
-color: white;
-font-family: "mont2";
-font-size: 15px;
-padding-left: 20px;
+    color: white;
+    font-family: "mont2";
+    font-size: 15px;
+    padding-left: 20px;
 }
 
-.barra {
-display: flex;
-flex-direction: row;
-justify-content: center;
+.barraDePesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .perfil a {
-width: 51px;
-height: 52px;
-border-radius: 18px;
-background-image: url(./img/Perfill.png);
-display: flex;
-align-items: center;
-justify-items: center;
-justify-content: center;
-margin-left: 70px;
-background-size: cover;
-color: rgba(255, 255, 255, 0);
+    width: 51px;
+    height: 52px;
+    border-radius: 18px;
+    background-image: url(./img/Perfill.png);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 70px;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0);
 }
 
 .notificacao {
-width: 51px;
-height: 52px;
-border-radius: 18px;
-background: linear-gradient(90deg, #B41D6C, #2A114B);
-display: flex;
-align-items: center;
-justify-items: center;
-justify-content: center;
-margin-left: -10px;
+    width: 51px;
+    height: 52px;
+    border-radius: 18px;
+    background: linear-gradient(90deg, #B41D6C, #2A114B);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: -10px;
 }
 
-header .baixo {
-font-family: "mont2";
-display: flex;
-flex-direction: row;
-display: flex;
-justify-content: center;
+nav {
+    background-color: #1A0436;  /*fundo*/
+    box-sizing: border-box; 
+    margin-top: 25px;
+    display: flex;
 }
 
-.baixo a{
-color: white;
-margin: 55px;
-font-size: 20px;
-margin-top: 25px;
-text-decoration: none;
-font-weight: 605;
-font-family: "mont2";
-letter-spacing: 2px;
-transition: ease-in-out 0.3s;
+nav li {
+    display: inline-block; /*posicionamento do li, para ele ficar na horizontal*/
 }
 
-a:hover {
-font-size: 25px;
+nav li .pag { /*personalização do a*/
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+}
+
+.inicio {
+    padding-left: 100px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+    padding-right: 100px;
+}
+
+.categorias{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+}
+
+.dropdown-menu a {
+    display: block;  /*exbiir o dropdown na vertical*/ 
+}
+
+.dropdown-menu { 
+    position: absolute; /*as opções aparecem embaixo da Categorias*/
+    background-color: #1A0436;
+    margin-left: -5px;
+    margin-top: 40px;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.362);
+    display: none; /*não exibir as opções*/
+}
+
+.opcao:hover {
+    background-color: #B41D6C;
+}
+
+.opcao {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding: 20px;
+}
+
+.dropdown:hover .dropdown-menu { /*ao passar o mous, as opções aparecem*/
+    display: block; 
+}
+
+
+ body {
+    background-image: url(./img/fundo1.png);
+    background-size: cover;
 }
 
 .formulario {
@@ -241,93 +288,6 @@ height: 574px;
     color: white;
     font-size: 25px;
     font-family: "mont2";
-}
-footer {
-    background-color: #2A114B;
-    height: 210px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    margin-top: 80px;
-}
-
-.logo1 {
-    font-family: "mont";
-    color: white;
-    width: 190px;
-    height: 45px;
-    text-align: center;
-    display: flex ;
-    font-size: 25px;
-    font-weight: 400;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 20px;
-    padding-right: 40px;
-    padding-top: 10px;
-   }
-
-   .bolha1 {
-    width: 60px;
-    height: 50px;
-    padding-bottom: 20px;
-}
-
-.cimaRodape {
-    display: flex;
-    flex-direction: row;
-    padding-left: 90px;
-
-}
-
-.baixoRodape {
-color: #844D93;
-margin: 20px;
-font-size: 20px;
-text-decoration: none;
-font-weight: 605;
-font-family: "mont4";
-letter-spacing: 2px;
-transition: none;
-}
-
-.baixoRodape:hover {
-    font-size: 20px;
-}
-
-.redes {
-padding-top: 40px;
-padding-left: 15px;
-padding-bottom: 25px;
-}
-
-.fim {
-    height: 10px;
-    width: 100%;
-    background-color: #1A0436;
-    padding-bottom: 15px;
-}
-
-.textosRodape {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.textoRodape {
-    font-size: 10px;
-    padding-top: 5px;
-    width: 250px;
-    margin-right: -105px;
-    color: white;
-
-}
-.textoRodape1 {
-    font-size: 10px;
-    padding-top: 5px;
-    width: 250px;
-    margin-left: 40px;
-    color: white;
 }
 
 .ComoFunciona2 {
@@ -411,6 +371,7 @@ height: 412px;
     margin-top: 40px;
     letter-spacing: 1.5px;
 }
+
 .barraFormulario{
     padding-left: 12px;
     background-color: #efe4fe44;
@@ -419,11 +380,12 @@ height: 412px;
     width: 495px;
     height: 43px;
     color: white;
-   margin-left: 89px;
-   font-family: "mont2";
-   font-size: 15px;
-   font-weight: 40;
+    margin-left: 89px;
+    font-family: "mont2";
+    font-size: 15px;
+    font-weight: 40;
 }
+
 #barraFormulario5::-webkit-input-placeholder{
     color:#ffffff98;
     font-size:15px;
@@ -503,7 +465,7 @@ height: 412px;
     font-family: "mont2";
     margin-left: 100px;
     padding-bottom: 10px;
-    margin-top: 100px;
+    margin-top: 51px;
     letter-spacing: 1.5px;
 }
 
@@ -589,7 +551,7 @@ flex-direction: row;
     padding-left: 103px;
 }
 
-.enviar {
+.botao {
     background-color: #2A114B;
     color: white;
     text-align: center;
@@ -604,9 +566,10 @@ flex-direction: row;
     margin-left: 1300px;
     text-decoration: none;
     justify-content: center;
+    transition: ease-in-out 0.3s; ;
 }
 
-.enviar2 {
+.enviar {
 color: white;
 font-family: "mont3";
 text-decoration: dotted;
@@ -614,6 +577,97 @@ transition: none;
 font-size: 20px;
 }
 
-.enviar2:hover {
+.enviar:hover {
     font-size: 20px;
+}
+
+.botao:hover {
+    background-color:#B41D6C;
+}
+
+footer {
+    background-color: #2A114B;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+.logo1 {
+    font-family: "mont";
+    color: white;
+    width: 190px;
+    height: 45px;
+    text-align: center;
+    display: flex ;
+    font-size: 25px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-top: 10px;
+   }
+
+   .bolha1 {
+    width: 60px;
+    height: 50px;
+    padding-bottom: 20px;
+}
+
+.ParteDeCimaRodape{
+    display: flex;
+    flex-direction: row;
+    padding-left: 90px;
+
+}
+
+.pag1 {
+color: #844D93;
+margin: 20px;
+font-size: 20px;
+text-decoration: none;
+font-weight: 605;
+font-family: "mont4";
+letter-spacing: 2px;
+transition: none;
+}
+
+.pag1:hover {
+    font-size: 20px;
+}
+
+.redes {
+padding-top: 40px;
+padding-left: 15px;
+padding-bottom: 25px;
+}
+
+.fim {
+    height: 10px;
+    width: 100%;
+    background-color: #1A0436;
+    padding-bottom: 15px;
+}
+
+.textosRodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.PoliticaDePrivacidade {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-right: -105px;
+    color: white;
+}
+.Copyright {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-left: 40px;
+    color: white;
 }

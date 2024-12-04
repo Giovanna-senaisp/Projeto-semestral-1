@@ -1,0 +1,710 @@
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilo para ocultar elementos sem remover o layout */
+.oculto {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Impede que o conteúdo desapareça de forma que interfira com outros elementos */
+}
+
+
+@font-face {
+    font-family: "mont";
+    src: url(./fontes/SwilyBright-Italic.otf);
+}
+
+@font-face {
+    font-family: "mont2";
+    src: url(./fontes/CreatoDisplay-Light.otf);
+}
+
+@font-face {
+    font-family: "mont3";
+    src: url(./fontes/CreatoDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: "mont4";
+    src: url(./fontes/CreatoDisplay-Bold.otf);
+}
+
+@font-face {
+    font-family: "mont5";
+    src: url(./fontes/CreatoDisplay-Medium.otf);
+}
+body {
+overflow: scroll;
+overflow-x: hidden;
+}
+
+body {
+    background-image: url(img/fundoo.png);
+    background-size: cover;
+}
+
+header {
+    background-color: none;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 4;
+    margin-bottom: 50px;
+}
+
+body {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.ParteDecima {
+    background-color: #1A0436;
+    height: 90px;
+    padding-top:  20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding-right: 20px;
+}
+
+.bolha {
+    width: 90px;
+    height: 75px;
+}
+
+.logoNome, .logo {
+ font-family: "mont";
+ color: white;
+ width: 190px;
+ height: 45px;
+ text-align: center;
+ display: flex ;
+ font-size: 35px;
+ font-weight: 400;
+ align-items: center;
+ justify-content: center;
+ padding-top: 10px;
+}
+
+#barraPesquisa {
+    width: 730px;
+    height: 53.79px;
+    background-image: url(img/barradepesquisa.png);
+    border-radius: 18px;
+    padding-right: 20px;
+    margin-left: 100px;
+    background-size: cover;
+}
+
+#barraPesquisa::-webkit-input-placeholder{
+    color:#ffffff98;
+    font-size:15px;
+}
+
+input {
+    color: white;
+    font-family: "mont2";
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.barraDePesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.perfil a {
+    width: 51px;
+    height: 52px;
+    border-radius: 18px;
+    background-image: url(img/imgHeaderEFooter/perfill.png);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 70px;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0);
+}
+
+.notificacao {
+    width: 51px;
+    height: 52px;
+    border-radius: 18px;
+    background: linear-gradient(90deg, #B41D6C, #2A114B);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: -10px;
+}
+
+nav {
+    background-color: #1A0436;
+    box-sizing: border-box;
+    margin-top: 25px;
+    display: flex;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li .pag {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+}
+
+.inicio {
+    padding-left: 100px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+    padding-right: 100px;
+}
+
+.categorias{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+}
+
+.dropdown-menu a {
+    display: block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: #1A0436;
+    margin-left: -5px;
+    margin-top: 40px;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.362);
+    display: none;
+}
+
+.opcao:hover {
+    background-color: #B41D6C;
+}
+
+.opcao {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding: 20px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.baner{
+    background-image: url(img/bannerfoto.png);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 1223px;
+    height: 733px;
+    margin-top: -100px;
+    border-radius: 60px;
+    background-repeat: no-repeat;
+}
+.baner img{
+    width: 1223px;
+    height: 733px;
+}
+.baner h1{
+    font-size: 38px;
+    color: white;
+    font-family: "mont2";
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.itens {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -80px;
+    position: relative;
+}
+main {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#cavalo a, h1{
+    margin-left: -250px;
+}
+#nadador a, h1{
+    margin-left: -250px;
+}
+.gigi a {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    color: #FCE6D9;
+    position: absolute;
+    font-family: "mont";
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: -250px;
+    margin-left: -150px;
+    text-decoration: solid;
+    text-shadow: 1px 1px 1px black;
+    padding: 15px;
+}
+
+.gigi h1 {
+    margin-bottom: -280px;
+    margin-left: -180px;
+    position: absolute;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    color: #FCE6D9;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+} 
+
+.imagem-hover {
+    display: none;
+    opacity: 0;
+    border: solid 5px #FCE6D9;
+    transition: opacity 5s ease, visibility 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.gigi:hover .imagem-inicial {
+    display: none;
+}
+
+.gigi:hover .imagem-hover {
+    display: block;
+    opacity: 1;
+}
+
+#paisagismo {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+.gigi {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#divisao1 .gigi img {
+    width: 642px;
+    height: 426px;
+}
+#divisao2 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+#barco img {
+    height: 858px;
+}
+#divisao3 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+#divisao3 img {
+    width: 380px;
+}
+#urbana {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 55px;
+}
+.city {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.city a {
+    position: absolute;
+    transition: opacity 5s ease, visibility 0.3s ease;
+    color: #FCE6D9;
+    font-family: "mont";
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: -250px;
+    margin-left: -150px;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: solid;
+}
+
+.city h1 {
+    margin-bottom: -280px;
+    margin-left: -180px;
+    position: absolute;
+    transition: opacity 5s ease, visibility 0.3s ease;
+    color: #FCE6D9;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+.city:hover .imagem-inicial {
+    display: none;
+    transition: opacity 5s ease-in-out;
+}
+
+.city:hover .imagem-hover {
+    display: block;
+    opacity: 1;
+}
+#urb1 {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#urb2 {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#urb3 {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#urb4 {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#fogo img {
+    width: 763px;
+    height: 498px;
+}
+.city {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+#documental{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+.fotod {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.fotod a {
+    position: absolute;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    color: #FCE6D9;
+    font-family: "mont";
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: -250px;
+    margin-left: -150px;
+    text-decoration: solid;
+    text-shadow: 1px 1px 1px black;
+}
+
+.fotod h1 {
+    margin-bottom: -280px;
+    margin-left: -180px;
+    position: absolute;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    color: #FCE6D9;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+.fotod:hover .imagem-inicial {
+    display: none;
+}
+
+.fotod:hover .imagem-hover {
+    display: block;
+    opacity: 1;
+}
+.d1{
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.d2{
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.d3{
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#chapeu img{
+    width: 550px;
+    height: auto;
+}
+.d4{
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.d4 img{
+    width: 630px;
+    height: 100%;
+}
+#floresta img{
+    height: 500px;
+}                
+.botoes {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+}
+
+.filtrar button {
+    color: #1a043600;
+    background-color: rgba(0, 0, 0, 0.514);
+    border: 3px solid #FCE6D9;
+    font-size: 28px;
+    border-radius: 60px;
+    -webkit-text-stroke: #FCE6D9 1px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#burbano{
+    margin-left: 50px;
+}
+.filtrar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: -5px;
+}
+
+.fil {
+    background-color: #FCE6D9;
+    font-size: 17px;
+    font-family: "mont5";
+    color: black;
+    border-radius: 60px;
+    width: 137px;
+    height: 53px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.fil img{
+    width: 16px;
+    height: 18px;
+    margin-right: 10px;
+    background: none;
+}
+
+
+footer {
+    background-color: #2A114B;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 150px;
+}
+.logo1 {
+    font-family: "mont";
+    color: white;
+    width: 190px;
+    height: 45px;
+    text-align: center;
+    display: flex ;
+    font-size: 25px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+.bolha1 {
+    width: 70px;
+    height: 60px;
+    padding-bottom: 20px;
+}
+.cimaRodape {
+    display: flex;
+    flex-direction: row;
+    padding-left: 90px;
+}
+.baixoRodape {
+color: #844D93;
+margin: 20px;
+font-size: 20px;
+text-decoration: none;
+font-weight: 605;
+font-family: "mont4";
+letter-spacing: 2px;
+transition: none;
+}
+.baixoRodape:hover {
+    font-size: 23px;
+    transition: ease-in-out;
+    transition: 0.3s;
+}
+.redes {
+padding-top: 40px;
+padding-left: 15px;
+padding-bottom: 25px;
+}
+.fim {
+    height: 10px;
+    width: 100%;
+    background-color: #1A0436;
+    padding-bottom: 15px;
+}
+.textosRodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.textoRodape {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-right: -105px;
+    color: white;
+}
+.textoRodape1 {
+    font-size: 10px;
+    padding-top: 5px;
+    width: 250px;
+    margin-left: 40px;
+    color: white;
+}
+.itens{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -80px;
+}

@@ -2,6 +2,7 @@
         margin: 0;
         border: 0;
         padding: 0;
+
 } 
 
 @font-face {
@@ -30,7 +31,7 @@
 }
 
 header {
-    background-color: #1A0436;
+    background-color: transparent;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -41,7 +42,7 @@ body {
     overflow-x: hidden;
 }
 
-.cima {
+.ParteDecima {
     background-color: #1A0436;
     height: 90px;
     padding-top:  20px;
@@ -56,12 +57,7 @@ body {
     height: 75px;
 }
 
-.conjuto {
-    display: flex;
-    flex-direction: row;
-}
-
-.logo {
+.logoNome, .logo {
  font-family: "mont";
  color: white;
  width: 190px;
@@ -73,7 +69,6 @@ body {
  align-items: center;
  justify-content: center;
  padding-top: 10px;
-
 }
 
 #barraPesquisa {
@@ -99,7 +94,7 @@ input {
     padding-left: 20px;
 }
 
-.barra {
+.barraDePesquisa{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -131,29 +126,83 @@ input {
     margin-left: -10px;
 }
 
-header .baixo {
-font-family: "mont2";
-display: flex;
-flex-direction: row;
-display: flex;
-justify-content: center;
+nav {
+    background-color: #1A0436;  /*fundo*/
+
+    margin-top: 25px;
 }
 
-.baixo a{
+nav li {
+    display: inline-block; /*posicionamento do li, para ele ficar na horizontal*/
+}
+
+nav li .pag { /*personalização do a*/
     color: white;
-    margin: 55px;
     font-size: 20px;
-    margin-top: 25px;
     text-decoration: none;
     font-weight: 605;
     font-family: "mont2";
     letter-spacing: 2px;
-    transition: ease-in-out 0.3s;
- }
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+}
 
-a:hover {
-    font-size: 25px;
- }
+.inicio {
+    padding-left: 100px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+    padding-right: 100px;
+}
+
+.categorias{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+}
+
+.dropdown-menu a {
+    display: block;  /*exbiir o dropdown na vertical*/ 
+}
+
+.dropdown-menu { 
+    position: absolute; /*as opções aparecem embaixo da Categorias*/
+    background-color: #1A0436;
+    margin-left: -5px;
+    margin-top: 40px;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.362);
+    display: none; /*não exibir as opções*/
+}
+
+.opcao:hover {
+    background-color: #B41D6C;
+}
+
+.opcao {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 605;
+    font-family: "mont2";
+    letter-spacing: 2px;
+    padding: 20px;
+}
+
+.dropdown:hover .dropdown-menu { /*ao passar o mous, as opções aparecem*/
+    display: block; 
+}
 
 .banner {
     height: 850px;
@@ -184,7 +233,7 @@ a:hover {
     padding-bottom: 20px;
 }
 
-.ouvido  {
+.desc1  {
     font-size: 45px;
     color: white;
     display: flex;
@@ -204,7 +253,7 @@ body {
     background-size: cover;
 }
 
-.mes {
+.titulo1 {
     color: white;
     font-size: 80px;
     padding-left: 89px;
@@ -214,7 +263,7 @@ body {
 }
 
 
-.titulo1 {
+.titulo2 {
     font-size: 40px;
     color:#FEB500;
     font-family: "mont5";
@@ -224,7 +273,7 @@ body {
     padding-left: 3px;
 }
 
-.titulo2 {
+.titulo3 {
     font-size: 40px;
     color:#4848D8;
     font-family: "mont5";
@@ -234,7 +283,7 @@ body {
     padding-left: 3px;
 }
 
-.titulo3 {
+.titulo4 {
     font-size: 40px;
     color:#B41D6C;
     font-family: "mont5";
@@ -244,7 +293,7 @@ body {
     padding-left: 3px;
 }
 
-.botaoSeta1 {
+.botaoSeta2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -253,10 +302,13 @@ body {
     font-size: 30px;
     margin-right: 2px;
     transition: none;
-    
 }
 
-.botaoSeta2 {
+.botaoSeta2:hover{
+    font-size: 30px;
+}
+
+.botaoSeta3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -267,7 +319,11 @@ body {
     transition: none;
 }
 
-.botaoSeta3 {
+.botaoSeta3:hover{
+    font-size: 30px;
+}
+
+.botaoSeta4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -276,6 +332,10 @@ body {
     font-size: 30px;
     margin-right: 2px;
     transition: none;
+}
+
+.botaoSeta4:hover{
+    font-size: 30px;
 }
 
 .categoria {
@@ -358,7 +418,7 @@ body {
     padding-left: 3px;
 }
 
-.desc {
+.desc2 {
     font-size: 24px;
     color:rgb(255, 255, 255);
     font-family: "mont2";
@@ -391,16 +451,15 @@ body {
 }
 
 
-.textEstar {
+.textoEestrela {
     display: flex;
     flex-direction: column;
-    display: flex;
     align-items: center;
 }
 
 .star1 {
-    width:400px;
-    padding-right: 420px;
+    width: 400px;
+    padding-right: 400px;
     margin-top: 50px;
 }
 
@@ -409,6 +468,7 @@ body {
     padding-left: 300px;
    margin-top: -80px;
 }
+
 .frase1 {
     display: flex;
     flex-direction: row;
@@ -429,7 +489,7 @@ body {
    margin-right: 455px;
     margin-top: -20px;
 }
-.OndeNovos1 {
+.semSerifa {
     font-size: 50px;
     color: white;
     font-family: "mont2";
@@ -438,7 +498,7 @@ body {
 
 }
 
-.OndeNovos2 {
+.semSerifa1 {
     font-size: 50px;
     color: white;
     font-family: "mont2";
@@ -447,7 +507,7 @@ body {
     margin-bottom: 20px;
 }
 
-.artistas2 {
+.ComSerifa{
     font-size: 50px;
     color: white;
     font-family: "mont";
@@ -546,7 +606,7 @@ padding-left: 110px;
     align-items: center;
 }
 
-.japa {
+.homem {
     width: 340px;
     height: 320px;
     margin-right: 50px;
@@ -577,7 +637,7 @@ padding-left: 110px;
 
 }
 
-.StarPink1 {
+.EstrelaRosa1{
     width: 40px;
     height: 40px;
     margin-left: 50px;
@@ -620,7 +680,7 @@ padding-left: 110px;
     margin-left: 25px;
 }
 
-.StarPink2 {
+.EstrelaRosa2{
     width: 40px;
     height: 40px;    
     padding-left: 540px;
@@ -670,12 +730,12 @@ padding-left: 110px;
 }
 
 .tituloNoticia {
-color: #FCE6D9;
-font-size: 80px;
-padding-top: 100px;
-font-family: "mont4";
-padding-bottom: 35px;
-margin-left: 20px;
+ color: #FCE6D9;
+ font-size: 80px;
+ padding-top: 100px;
+ font-family: "mont4";
+ padding-bottom: 60px;
+ margin-left: 20px;
 }
 
 .noticias {
@@ -689,6 +749,7 @@ background-size: cover;
 width: 440px;
 height: 700px;
 margin-right: 30px;
+transition: transform 0.3s ease-in-out;
 }
 
 .noticia2 {
@@ -697,6 +758,7 @@ background-size: cover;
 width: 440px;
 height: 700px;
 margin-right: 30px;
+transition: transform 0.3s ease-in-out;
 }
 
 .noticia3 {
@@ -705,6 +767,7 @@ background-size: cover;
 width: 440px;
 height: 700px;
 margin-right: 30px;
+transition: transform 0.3s ease-in-out;
 }
 
 .not1 {
@@ -716,6 +779,7 @@ padding-top:  550px;
 padding-left: 40px;
 width: 320px;
 font-family: "mont2";
+
 }
     
 .not2 {
@@ -727,6 +791,7 @@ padding-top:  550px;
 padding-left: 40px;
 width: 320px;
 font-family: "mont2";
+
 }
     
     .not3 {
@@ -738,8 +803,18 @@ font-family: "mont2";
         padding-left: 40px;
         width: 320px;
         font-family: "mont2";
+    
     }
 
+    .noticia1:hover{
+        transform: scale(1.1);
+    }
+    .noticia2:hover{
+        transform: scale(1.1);
+    }
+    .noticia3:hover{
+        transform: scale(1.1);
+    }
     .Eventos {
         display: flex;
         flex-direction: row;
@@ -859,7 +934,7 @@ font-family: "mont2";
         padding-left: 70px;
         color:white;
         font-family: "mont2";
-    }
+}
 
 .saibamais{
 color: white;
@@ -915,14 +990,14 @@ footer {
     padding-bottom: 20px;
 }
 
-.cimaRodape {
+.ParteDeCimaRodape{
     display: flex;
     flex-direction: row;
     padding-left: 90px;
 
 }
 
-.baixoRodape {
+.pag1 {
 color: #844D93;
 margin: 20px;
 font-size: 20px;
@@ -933,7 +1008,7 @@ letter-spacing: 2px;
 transition: none;
 }
 
-.baixoRodape:hover {
+.pag1:hover {
     font-size: 20px;
 }
 
@@ -955,14 +1030,14 @@ padding-bottom: 25px;
     flex-direction: row;
     justify-content: space-between;
 }
-.textoRodape {
+.PoliticaDePrivacidade {
     font-size: 10px;
     padding-top: 5px;
     width: 250px;
     margin-right: -105px;
     color: white;
 }
-.textoRodape1 {
+.Copyright {
     font-size: 10px;
     padding-top: 5px;
     width: 250px;
@@ -970,4 +1045,3 @@ padding-bottom: 25px;
     color: white;
 }
 
-    
